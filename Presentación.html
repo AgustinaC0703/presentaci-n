@@ -265,7 +265,9 @@
             width: 200px;
             height: 100px;
             margin-left: -50px;
-            margin-right: 100px
+            margin-right: 100px;
+            position: relative;
+            left: 44px
         }
 
         .sketch {
@@ -301,7 +303,10 @@
             font-size: 18px;
             margin-left: 50px;
             margin-right: 50px;
-            margin-top: 20px
+            margin-top: 20px;
+            position: relative;
+            top: -30px;
+            left: -6px;
         }
 
         .fonts-info p {
@@ -312,27 +317,34 @@
         .arrow {
             font-size: 60px;
             color: #000000;
-            position: absolute;
+            position: relative;
         }
 
         .arrow-left-top {
-            top: -3%;
-            left: 25%;
+            top: 15%;
+            left: 32px;
         }
 
         .arrow-right-top {
-            top: 25%;
-            right: 23%;
+            top: 58%;
+            right: 14%;
         }
 
         .arrow-left-bottom {
-            bottom: 25%;
-            left: 30%;
+            bottom: -24%;
+            left: -16%;
         }
 
         .arrow-right-bottom {
-            bottom: 37%;
-            right: 23%;
+            top: -4%;
+            right: 8%;
+        }
+
+        .arrow-connect-element {
+            display: flex;
+            z-index: 999;
+            position: relative;
+            /* left: -9%; */
         }
 
         .cafe2d-background-6 {
@@ -500,17 +512,19 @@
         }
 
         @media(max-width:1400px) {
-            
-            .text-box{
+
+            .text-box {
                 flex-direction: column;
                 width: 168px;
                 height: 218px;
-            } 
-            .text-box:last-child{
+            }
+
+            .text-box:last-child {
                 height: 110px;
                 margin-bottom: 70px;
             }
-            .text-box:first-child{
+
+            .text-box:first-child {
                 height: 149px;
                 /* margin-bottom: 70px; */
             }
@@ -534,11 +548,112 @@
 
             .image-container {
                 gap: 98px !important;
+                position: relative;
+                left: -24px;
             }
-            
-            .text-box{
+
+
+            .text-box {
                 flex-direction: column;
-                width: 168px;
+                width: 128px;
+            }
+
+            .icons {
+                grid-area: icons;
+                width: 136px;
+                height: 29px;
+                margin-top: 100px;
+                margin-right: -30px;
+                margin-left: 40px;
+                position: relative;
+                top: -28px;
+                left: -22px;
+            }
+
+            .logo2 {
+                width: 155px;
+                height: 52px;
+                position: relative;
+                left: 176px;
+            }
+
+
+            .logo2 img {
+                position: relative;
+                top: -31px;
+            }
+
+            .featured-products {
+                grid-area: featured-products;
+                width: 344px;
+                height: 117px;
+                margin-left: -200px;
+                margin-right: 150px;
+                margin-top: 30px;
+                position: relative;
+                top: -42px;
+                left: 141px;
+            }
+
+            .fonts-info {
+                grid-area: fonts-info;
+                font-family: 'Cardo', serif;
+                color: #000000;
+                font-size: 12px;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 20px;
+                position: relative;
+                top: -30px;
+                left: -35px;
+            }
+
+            .arrow-connect-element:last-child {
+                top: -27px;
+                left: 40px;
+            }
+
+            /* Flechas */
+            .arrow {
+                font-size: 28px;
+                color: #000000;
+                position: relative;
+            }
+
+            .arrow-left-top {
+                top: 94px;
+                right: -27px;
+            }
+
+            .arrow-right-top {
+                top: 94px;
+                right: -12px;
+            }
+
+            .arrow-left-bottom {
+                bottom: -31px;
+                left: -7px;
+            }
+
+            .arrow-right-bottom {
+                top: -4%;
+                right: -5px;
+            }
+
+            .arrow-connect-element {
+                display: flex;
+                z-index: 999;
+                position: relative;
+                /* left: -9%; */
+            }
+
+            .sketch {
+                grid-area: sketch;
+                width: 158px;
+                height: 264px;
+                margin-left: -100px;
+                position: relative;
+                left: 72px;
             }
         }
 
@@ -549,7 +664,7 @@
         }
 
         @media(max-width: 668px) {
-            .cafe2d-background-3{
+            .cafe2d-background-3 {
                 overflow: scroll;
             }
 
@@ -559,22 +674,24 @@
                 flex-wrap: wrap;
             }
 
-            .slide-title{
+            .slide-title {
                 margin-bottom: 50px !important;
                 margin-top: 348px !important;
             }
-            .cafe2d-background-6 .slide-title{
+
+            .cafe2d-background-6 .slide-title {
                 margin-bottom: 50px !important;
                 margin-top: 28px !important;
             }
-            
+
             .cafe2d-background-6 {
                 /* margin-bottom: 50px !important;
                 margin-top: 28px !important; */
                 padding: 40px 0px !important;
                 overflow: scroll;
             }
-            .text-box{
+
+            .text-box {
                 width: 168px;
             }
         }
@@ -595,7 +712,7 @@
                 font-size: 20px;
             }
 
-            .cafe2d-background-3{
+            .cafe2d-background-3 {
                 overflow: scroll;
             }
 
@@ -605,12 +722,12 @@
                 flex-wrap: wrap;
             }
 
-            .slide-title{
+            .slide-title {
                 margin-bottom: 0px !important;
                 margin-top: 348px !important;
             }
-            
-            .text-box{
+
+            .text-box {
                 width: 168px;
             }
         }
@@ -656,12 +773,12 @@
                 gap: 5px !important;
             }
 
-            .cafe2d-background-6{
+            .cafe2d-background-6 {
                 /* margin-bottom: 50px !important;
                 margin-top: 28px !important; */
                 padding: 40px 0px !important;
             }
-            
+
         }
     </style>
 
@@ -707,33 +824,40 @@
                 <h2 class="slide-title2">Boceto del Sitio</h2>
 
                 <div class="content-container">
-                    <div class="image logo2">
-                        <img src="imagenes/logo2.png" alt="Logo Café 2D">
+                    <div class="arrow-connect-element">
+                        <div class="image logo2">
+                            <img src="imagenes/logo2.png" alt="Logo Café 2D">
+                        </div>
+                        <div class="arrow arrow-left-top">&#8592;</div>
+                    </div>
+
+                    <div class="arrow-connect-element">
+                        <div class="arrow arrow-right-top">&#8594;</div>
+                        <div class="image icons">
+                            <img src="imagenes/iconos.jpg" alt="Iconos del Sitio">
+                        </div>
                     </div>
 
                     <div class="image sketch">
                         <img src="imagenes/boceto.jpg" alt="Boceto del Sitio">
                     </div>
 
-                    <div class="image icons">
-                        <img src="imagenes/iconos.jpg" alt="Iconos del Sitio">
+                    <div class="arrow-connect-element">
+                        <div class="image featured-products">
+                            <img src="imagenes/slider.jpg" alt="Productos Destacados">
+                        </div>
+                        <div class="arrow arrow-left-bottom">&#8592;</div>
                     </div>
 
-                    <div class="image featured-products">
-                        <img src="imagenes/slider.jpg" alt="Productos Destacados">
+                    <div class="arrow-connect-element">
+                        <div class="arrow arrow-right-bottom">&#8594;</div>
+                        <div class="fonts-info">
+                            <p>Cardo, Serif</p>
+                            <p>Questrial, Serif</p>
+                            <p>DM Sans, Serif</p>
+                        </div>
                     </div>
 
-                    <div class="fonts-info">
-                        <p>Cardo, Serif</p>
-                        <p>Questrial, Serif</p>
-                        <p>DM Sans, Serif</p>
-                    </div>
-
-                    <!-- Flechas -->
-                    <div class="arrow arrow-left-top">&#8592;</div>
-                    <div class="arrow arrow-right-top">&#8594;</div>
-                    <div class="arrow arrow-left-bottom">&#8592;</div>
-                    <div class="arrow arrow-right-bottom">&#8594;</div>
                 </div>
             </div>
         </div>

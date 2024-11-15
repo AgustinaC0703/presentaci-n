@@ -153,7 +153,10 @@
             text-align: center;
         }
 
-
+        #menu-icon {
+            position: relative;
+            top: -58px;
+        }
 
         .gallery {
             display: grid;
@@ -185,7 +188,6 @@
             }
 
             .fa-bars {
-
                 margin-right: -13px;
                 margin-top: -110px
             }
@@ -230,7 +232,7 @@
         }
 
         .header-container {
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
         }
 
@@ -272,9 +274,8 @@
             }
 
             .fa-bars {
-
                 margin-top: -76px;
-                margin-right: 5px
+                margin-right: 5px;
             }
 
             .sobrenosimg {
@@ -438,13 +439,18 @@
 
             .image-stack {
                 margin-left: 0;
+                width: 420px;
+                position: relative;
+                margin-top: 2px;
+                top: 0px;
+                height: 460px;
+                
             }
 
             .historiatext-container {
                 margin-left: 50px;
                 max-width: 60%;
             }
-
 
         }
     </style>
@@ -467,7 +473,6 @@
                     <li><a href="Menú.html">Menú</a></li>
                     <li><a href="Ubicación y horarios.html">Ubicación y Horarios</a></li>
                     <li><a href="Acerca de Nostros.html">Acerca de Nosotros</a></li>
-
                 </ul>
             </nav>
             <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
